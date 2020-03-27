@@ -30,4 +30,5 @@ for key, shotresultlist in dict_playerzone_shotresult.items():
     
 for key in dict_player_zonehitrate:
     sorted_dict_player_zonehitrate = sorted(dict_player_zonehitrate[key], key= itemgetter(1), reverse =True)
-    print "%s\t%s" % (key, sorted_dict_player_zonehitrate[0])
+    if key in ['James Harden', 'Chris Paul', 'Stephen Curry', 'Lebron James']:
+        print "%s\t%s" % (key, sorted_dict_player_zonehitrate[0])
