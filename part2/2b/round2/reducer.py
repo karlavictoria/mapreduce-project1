@@ -17,7 +17,7 @@ for key, shotresultlist in dict_playerzone_shotresult.items():
     zone, player = key.split(',')
     shotresultlist = (str(shotresultlist).replace('[','').replace(']','').split(','))
     for i in range(len(shotresultlist)):
-        shotresultlist[i] = shotresultlist[i].replace('\\n','').replace('\n','').replace("\'","").strip('\\').strip()
+        shotresultlist[i] = shotresultlist[i].replace('\\n','').replace("\'","").strip('\\').strip()
     if len(shotresultlist) == 2 and shotresultlist[0] == 'made':
         hitrate = 1
     elif len(shotresultlist) == 2 and shotresultlist[0] == 'missed':
