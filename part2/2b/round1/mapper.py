@@ -8,7 +8,6 @@ Centroid3 = [float(sys.argv[7]), float(sys.argv[8]), float(sys.argv[9])]
 Centroid4 = [float(sys.argv[10]), float(sys.argv[11]), float(sys.argv[12])]
 
 Centroid = [Centroid1,Centroid2,Centroid3,Centroid4]
-content =[]
 
 for line in sys.stdin:
     try:

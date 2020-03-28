@@ -4,8 +4,6 @@ import sys
 
 dict_zoneplayer_shotresultcount= {}
 
-content =[]
-
 for line in sys.stdin:
     line = line.split(',')
     zone = line[0]
